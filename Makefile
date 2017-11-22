@@ -6,7 +6,7 @@ clean:
 build:
 	docker build --rm -t $(NAME) .
 test:
-	docker run --rm -it $(NAME) --version | grep -a "jq-1"
+	docker run --rm -i $(NAME) --version | grep -a "jq-1"
 pull:
 	docker pull $(DOCKER_ID_USER)/$(NAME):latest
 push: all
