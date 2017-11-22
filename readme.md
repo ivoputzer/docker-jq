@@ -14,10 +14,10 @@ docker pull ivoputzer/jq:latest
 
 ### add alias to your shell profile
 ```sh
-alias jq="docker run --rm -t ivoputzer/jq $@"
+alias jq="docker run --rm -i ivoputzer/jq $@"
 ```
 
 ### add alias to your fish config
 ```fish
-alias jq "docker run --rm -t ivoputzer/jq $argv"
+alias jq "docker run --rm -i ivoputzer/jq $argv"
 ```
