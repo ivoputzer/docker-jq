@@ -6,7 +6,7 @@ clean:
 build:
 	docker build --rm -t $(NAME) .
 test:
-	docker run --rm -it $(NAME) -h > /dev/null
+	docker run --rm -it $(NAME) --version | grep -a "jq-1"
 login:
 	docker login
 pull:
